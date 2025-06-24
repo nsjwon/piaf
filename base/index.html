@@ -2,7 +2,72 @@
 <!--@js(/layout/basic/js/main.js)-->
 <!--@css(/layout/basic/css/main.css)-->
 <!--@import(/smart-banner/shop1/smart-banner-admin-RES00001.html)-->
-<section class="section main_image_text_gallery" data-ez-module="image-gallery/2" data-ez-role="style.background" data-ez-item-length="3" data-ez="contents-1l93y43-1">
+<section class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid4" data-ez="contents-06xknvd-1">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
+			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
+			<ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
+			<ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
+		</ez-var>
+	</ez-prop>
+
+	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
+		<div class="main_title_txt01" data-ez-role="title">NEW! ARRIVALS</div>
+		<div class="main_title_txt02" data-ez-role="subtitle">언제나 새로운 신상품</div>
+	</div><!-- //main_title -->
+
+	<div data-ez-holder="product_listmain">
+		<div module="product_listmain_1" class="ec-base-product">
+			<!--
+				$count = 8
+				$basket_result = /product/add_basket.html
+				$basket_option = /product/basket_option.html
+				$moreview = yes
+				$cache = yes
+			-->
+			<ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
+				<!--@import(/product/list_product.html)-->
+			</ul>
+		</div>
+		<div module="product_listmore_1" class="more">
+			<a href="#none" onclick="{$more_action}" class="btnMore">
+				상품 더보기<div>(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)</div>
+			</a>
+		</div>
+	</div>
+</section>
+<section class="section main_product_slide" data-ez-module="product-list-slide/2" data-ez-layout="grid5_slide" data-ez="contents-168a0e0-1" data-ez-display="hidden" style="display: none;">
+	<ez-prop data-version="1.0.0" type="layout">
+		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
+			<ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
+			<ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
+			<ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
+		</ez-var>
+	</ez-prop>
+
+	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온라인 타이틀 수정하는곳 -->
+		<div class="main_title_txt01" data-ez-role="title">ONLY! ON</div>
+		<div class="main_title_txt02" data-ez-role="subtitle">오직 온라인에서만 만나보세요</div>
+	</div><!-- //main_title -->
+
+	<div data-ez-holder="product_listmain">
+		<div module="product_listmain_1" class="ec-base-product swiper-container special_slide">
+			<ul class="swiper-wrapper prdList grid5_slide" data-ez-role="layout ez-discount-tag">
+				<!--@import(/product/list_product_slide.html)-->
+			</ul>
+			<div class="swiper-scrollbar"></div>
+		</div>
+	</div>
+	<div class="swiper-button-prev swiper-button-prev-special_slide"></div>
+	<div class="swiper-button-next swiper-button-next-special_slide"></div>
+</section>
+<section class="section main_image_text_gallery" data-ez-module="image-gallery/2" data-ez-role="style.background" data-ez-item-length="3" data-ez="contents-1l93y43-1" data-ez-display="hidden" style="display: none;">
 	<ez-prop data-version="1.0.0" type="layout">
 		<ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
 			<ez-item data-id="size" data-pc="396 240" data-mobile="396 240"></ez-item>
@@ -193,77 +258,12 @@
 
 	<div class="main_video_box"><iframe data-ez-role="video" id="ytplayer" type="text/html" src="https://m-img.cafe24.com/images/ec/sde/video/ouui_1920x1080.mp4" frameborder="0" allowfullscreen data-ez-rawsrc="https://m-img.cafe24.com/images/ec/sde/video/ouui_1920x1080.mp4" loading="lazy"></iframe></div>
 </section>
-<section class="section main_product_slide" data-ez-module="product-list-slide/2" data-ez-layout="grid5_slide" data-ez="contents-168a0e0-1">
-	<ez-prop data-version="1.0.0" type="layout">
-		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
-			<ez-item data-id="grid3_slide" data-name="일반3단형(PC 3열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid4_slide" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5_slide" data-name="일반5단형(PC 5열/MOBILE 3열)"></ez-item>
-			<ez-item data-id="grid3_slide list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid4_slide list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5_slide list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 3열)"></ez-item>
-		</ez-var>
-	</ez-prop>
-
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온라인 타이틀 수정하는곳 -->
-		<div class="main_title_txt01" data-ez-role="title">ONLY! ON</div>
-		<div class="main_title_txt02" data-ez-role="subtitle">오직 온라인에서만 만나보세요</div>
-	</div><!-- //main_title -->
-
-	<div data-ez-holder="product_listmain">
-		<div module="product_listmain_1" class="ec-base-product swiper-container special_slide">
-			<ul class="swiper-wrapper prdList grid5_slide" data-ez-role="layout ez-discount-tag">
-				<!--@import(/product/list_product_slide.html)-->
-			</ul>
-			<div class="swiper-scrollbar"></div>
-		</div>
-	</div>
-	<div class="swiper-button-prev swiper-button-prev-special_slide"></div>
-	<div class="swiper-button-next swiper-button-next-special_slide"></div>
-</section>
-<section class="section main_product_list" data-ez-module="product-list/1" data-ez-layout="grid4" data-ez="contents-06xknvd-1">
-	<ez-prop data-version="1.0.0" type="layout">
-		<ez-var data-prop="layout" data-namespace="ez.module.product-list.layout" data-type="array">
-			<ez-item data-id="grid3" data-name="일반3단형(PC 3열/MOBILE 1열)"></ez-item>
-			<ez-item data-id="grid4" data-name="일반4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5" data-name="일반5단형(PC 5열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid3 list_gallery" data-name="이미지강조3단형(PC 3열/MOBILE 1열)"></ez-item>
-			<ez-item data-id="grid4 list_gallery" data-name="이미지강조4단형(PC 4열/MOBILE 2열)"></ez-item>
-			<ez-item data-id="grid5 list_gallery" data-name="이미지강조5단형(PC 5열/MOBILE 2열)"></ez-item>
-		</ez-var>
-	</ez-prop>
-
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 메인 새로운신상품 타이틀 수정하는곳 -->
-		<div class="main_title_txt01" data-ez-role="title">NEW! ARRIVALS</div>
-		<div class="main_title_txt02" data-ez-role="subtitle">언제나 새로운 신상품</div>
-	</div><!-- //main_title -->
-
-	<div data-ez-holder="product_listmain">
-		<div module="product_listmain_1" class="ec-base-product">
-			<!--
-				$count = 8
-				$basket_result = /product/add_basket.html
-				$basket_option = /product/basket_option.html
-				$moreview = yes
-				$cache = yes
-			-->
-			<ul class="prdList grid4" data-ez-role="layout ez-discount-tag">
-				<!--@import(/product/list_product.html)-->
-			</ul>
-		</div>
-		<div module="product_listmore_1" class="more">
-			<a href="#none" onclick="{$more_action}" class="btnMore">
-				상품 더보기<div>(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)</div>
-			</a>
-		</div>
-	</div>
-</section>
 <section class="section main_text ez-textsize-medium ez-align-center" data-ez-module="text/1" data-ez-role="style.background" data-ez-align="center" data-ez-textsize="medium" style="background-color:#fafafa;" data-ez="contents-1b2ud28-1"><!-- 메인 텍스트배너 수정하는곳 -->
 	<div class="main_text_title" data-ez-role="title" style="font-weight: bold;">OOUI HOT EVENT</div>
 	<div class="main_text_txt" data-ez-role="desc"><p>오우이에서 지금 진행중인 이벤트를 만나보세요.</p></div>
 	<div class="main_text_link"><a data-ez-role="a" href="#" target="_self">자세히 보기</a></div>
 </section>
-<section class="section main_map ez-align-left" data-ez-module="map/1" data-ez-align="left" data-ez="contents-198barw-1" style="margin-bottom: 120px;">
+<section class="section main_map ez-align-left" data-ez-module="map/1" data-ez-align="left" data-ez="contents-198barw-1" style="margin-bottom: 120px; display: none;" data-ez-display="hidden">
 	<ez-prop data-version="1.0.0" type="layout">
 		<ez-var data-prop="image" data-namespace="ez.module.map.image">
 			<ez-item data-id="size" data-pc="650 480" data-mobile="650 480"></ez-item>
@@ -288,79 +288,8 @@
 		</picture>
 	</div><!-- //main_map_banner -->
 </section>
-<section class="section main_image_text_gallery" data-ez-module="image-gallery/2" data-ez-role="style.background" data-ez-item-length="4" data-ez="contents-0kfbmz1-1">
-	<ez-prop data-version="1.0.0" type="layout">
-		<ez-var data-prop="image" data-namespace="ez.module.image-gallery.image">
-			<ez-item data-id="size" data-pc="396 240" data-mobile="396 240"></ez-item>
-		</ez-var>
-		<ez-var data-prop="display" data-namespace="ez.module.image-gallery.display">
-			<ez-item data-id="item" data-max="10"></ez-item>
-			<ez-item data-id="column" data-default="3" data-min="1" data-max="5"></ez-item>
-		</ez-var>
-		<ez-var data-prop="layout" data-namespace="ez.module.image-gallery.layout">
-			<ez-item data-id="mobile" data-default="slide">
-				<ez-item data-id="options" data-type="array">
-					<ez-item data-id="slide" data-name="슬라이드"></ez-item>
-					<ez-item data-id="more" data-name="더보기"></ez-item>
-					<ez-item data-id="none" data-name="사용안함"></ez-item>
-				</ez-item>
-			</ez-item>
-		</ez-var>
-	</ez-prop>
-
-	<div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center"><!-- 온스토리 타이틀 수정하는곳 -->
-		<div class="main_title_txt01" data-ez-role="title">ON STORE!</div>
-		<div class="main_title_txt02" data-ez-role="desc"></div>
-	</div><!-- //main_title -->
-
-    <div class="main_3dan_banner ez-mobile-layout-slide" data-ez-role="ez-mobile-layout" data-ez-mobile-layout="slide"><!-- 메인 3단배너 수정하는곳 -->
-         <ul data-ez-role="image-list ez-column" class="ez-column-4" data-ez-column="4"><li data-ez-role="image-item ez-align">
-				<a data-ez-role="a" href="#" target="_self">
-					<picture>
-						<source srcset="/shop1/skin-base/SkinImg/img/main_banner01_pc.jpg" media="(max-width: 1024px)" data-ez-role="img-pc" data-ez-eb>
-						<img src="/shop1/skin-base/SkinImg/img/main_banner01_pc.jpg" data-ez-role="img-mobile" loading="lazy">
-					</picture>
-					<div class="main_banner_txt">
-						<div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58);"></div>
-						<div class="main_banner_more" data-ez-role="desc" style="color: rgb(154, 154, 154);"></div>
-					</div><!--//main_banner_txt-->
-				</a>
-            </li><li data-ez-role="image-item ez-align">
-				<a data-ez-role="a" href="#" target="_self">
-					<picture>
-						<source srcset="/shop1/skin-base/SkinImg/img/main_banner02_pc.jpg" media="(max-width: 1024px)" data-ez-role="img-pc" data-ez-eb>
-						<img src="/shop1/skin-base/SkinImg/img/main_banner02_pc.jpg" data-ez-role="img-mobile" loading="lazy">
-					</picture>
-					<div class="main_banner_txt">
-						<div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58);"></div>
-						<div class="main_banner_more" data-ez-role="desc" style="color: rgb(154, 154, 154);"></div>
-					</div><!--//main_banner_txt-->
-				</a>
-            </li><li data-ez-role="image-item ez-align">
-				<a data-ez-role="a" href="#" target="_self">
-					<picture>
-						<source srcset="/shop1/skin-base/SkinImg/img/main_banner03_pc.jpg" media="(max-width: 1024px)" data-ez-role="img-pc" data-ez-eb>
-						<img src="/shop1/skin-base/SkinImg/img/main_banner03_pc.jpg" data-ez-role="img-mobile" loading="lazy">
-					</picture>
-					<div class="main_banner_txt">
-						<div class="main_banner_txt01" data-ez-role="title" style="color: rgb(58, 58, 58);"></div>
-						<div class="main_banner_more" data-ez-role="desc" style="color: rgb(154, 154, 154);"></div>
-					</div><!--//main_banner_txt-->
-				</a>
-            </li><li data-ez-role="image-item ez-align">
-				<a data-ez-role="a" href="#" target="_self">
-					<picture>
-						<source srcset="https://ecimg.cafe24img.com/pg2004b58145642098/piaf0608/web/upload/ezst/image/ez-image-contents-0kfbmz1-1-1m4y6a8-1.jpg?v=1750724098718" media="(max-width: 1024px)" data-ez-role="img-pc" data-ez-eb="https://ecimg.cafe24img.com/pg2004b58145642098/piaf0608/web/upload/ezst/image/ez-image-contents-0kfbmz1-1-1m4y6a8-1.edibotbanner.json">
-						<img src="https://ecimg.cafe24img.com/pg2004b58145642098/piaf0608/web/upload/ezst/image/ez-image-contents-0kfbmz1-1-1m4y6a8-1.jpg?v=1750724098718" data-ez-role="img-mobile" loading="lazy">
-					</picture>
-					<div class="main_banner_txt">
-						<div class="main_banner_txt01" data-ez-role="title" style>타이틀</div>
-						<div class="main_banner_more" data-ez-role="desc" style></div>
-					</div><!--a-->
-				</a>
-            </li></ul>
-		<div class="main_image_text_gallery_more"><a href="#none" class="main_image_text_gallery_more_btn">더보기</a></div>
-	</div><!-- //main_3dan_banner -->
+<section class="section" data-ez-module="app-instagram/1" data-ez-name="인스타그램 위젯" data-ez-type="plain" id="instagramWidgetManual" style="height: 250px;" data-ez="contents-0f7b5jx-1">
+<!--앱을 비활성화한 뒤 삽입한 코드를 직접 삭제해야 할 수도 있습니다.-->
 </section>
 <!--@define(cmc_log)-->
-<!--#ez="1/28"-->
+<!--#ez="1/14"-->
