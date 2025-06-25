@@ -88,17 +88,17 @@ body.expand {left:0;}
 #aside {left:-730px;width:730px;}
 #aside .navigation-menu {padding:70px 2rem;}
 #aside .btnClose {top:22px;}
-#aside .navigation_member {background-color:#ffffffcc;text-align:center;margin:0 auto;}
-#aside .navigation_member .navigation_state {display:flex;justify-content:center;flex-wrap:wrap;margin:60px auto 0; flex-direction: column; gap: 8px;}
-#aside .navigation_member .navigation_state a {font-size:12px;line-height:1;color:#1a1a1a;display:flex;align-items:center;white-space:nowrap;padding:0 0 5px 0;}
+#aside .navigation_member {background-color:#ffffff70;text-align:center;margin:0 auto;}
+#aside .navigation_state {display:flex;justify-content:center;flex-wrap:wrap;margin:24px auto 0; flex-direction: column; gap: 12px;}
+#aside .navigation_state a {font-size:12px;line-height:1;color:#1a1a1a;display:flex;align-items:center;white-space:nowrap;padding:0 0 5px 0;}
 #aside .navigation-menu__board,
-#aside .navigation-menu__category,
 #aside .navigation-menu__project {padding:0;border:0;}
+#aside .navigation-menu__category {padding: 0;border: 0;}
 #aside .navigation-menu__board .categoryList {display:none;}
 #aside .navigation-menu__board ul li {margin:40px 0;}
 #aside .navigation-menu__board ul li a,
 #aside .navigation-menu__category .view,
-#aside .navigation-menu__project .view {display:block;font-size:18px;padding:4px 30px 4px 0;color:#1a1a1a;word-break:keep-all;word-wrap:break-word;}
+#aside .navigation-menu__project .view {display:block;font-size:18px;padding:5px 30px 5px 0;color:#1a1a1a;word-break:keep-all;word-wrap:break-word;}
 #aside .navigation-menu__category .categoryList li {margin:40px 0;}
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu li {margin:20px 0;}
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu {padding-left:20px;}
@@ -120,9 +120,9 @@ body.expand {left:0;}
 #aside .navigation-menu__board .selected .icoCategory:after,
 #aside .navigation-menu__category .categoryList li.selected > a.cate:after,
 #aside .navigation-menu__project .selected .icoCategory:after {display:none;}
-#aside .slide_line {margin:40px 0 35px;width:100%;height:1px;background-color:#ebebeb;}
-#aside .navigation-menu__board .title,
+#aside .slide_line {margin:20px 0 16px;width:100%;height:1px;background-color:#ffffff20;}
 #aside .navigation-menu__project .title {padding:0;font-size:15px;line-height:35px;height:35px;font-weight:400;color:#1a1a1a;position:relative;}
+#aside .navigation-menu__board .title {padding:0;font-size:12px;line-height:35px;height:35px;font-weight:400;color:#1a1a1a;position:relative;}
 #aside .navigation-menu__project ul li {margin:40px 0;}
 #aside .navigation-menu__category #slide_add_category a.cate {position:absolute;right:0;top:0;word-wrap:break-word;overflow:hidden;width:33px;height:33px;font-size:0;line-height:1px;color:transparent;text-indent:150%;white-space:nowrap;}
 #aside .navigation-menu__category #slide_add_category a.cate:before {content:'';position:absolute;left:50%;top:50%;width:25px;height:1px;background:#444;margin:0 0 0 -12px;border:0;transform:rotate(0);}
@@ -151,8 +151,8 @@ body.expand {left:0;}
 
 body.expand {position:relative;height:100%; min-height:100%; touch-action:none;}
 #aside {left:-100%;width:100%;}
-#aside .navigation-menu {padding:30px 4%;}
-#aside .navigation_member {padding:45px 4% 23px 4%;}
+#aside .navigation-menu {padding:12px 20px;}
+#aside .navigation_member {padding:45px 20px 24px 20px;}
 #aside .navigation_member .side_logo {display:flex;justify-content:flex-start;align-items:center;}
 #aside .navigation_member .side_logo a {font-size:25px;}
 #aside .navigation_member .side_logo img {max-width:200px;max-height:30px;}
@@ -160,10 +160,10 @@ body.expand {position:relative;height:100%; min-height:100%; touch-action:none;}
 #aside .navigation_member .navigation_state a {font-size:12px;}
 #aside .navigation-menu__project ul li,
 #aside .navigation-menu__board ul li,
-#aside .navigation-menu__category .categoryList li {margin:10px 0;}
+#aside .navigation-menu__category .categoryList li {margin:2px 0;}
 #aside .navigation-menu__board ul li a,
-#aside .navigation-menu__category .view,
-#aside .navigation-menu__project .view {font-size:15px; font-weight: 500;}
+#aside .navigation-menu__project .view {font-size:12px;}
+#aside .navigation-menu__category .view {font-weight: 500;}
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu li {margin:5px 0;}
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu {padding-left:10px;}
 #aside .navigation-menu__category .categoryList > li.selected .slideSubMenu a.view {font-size:14px;}
